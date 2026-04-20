@@ -1,0 +1,114 @@
+2026-04-21 01:15:05,793 - __main__ - INFO - Initialized FactorAnalyzer: input=data/processed/factor_data.parquet, output=data/analysis
+2026-04-21 01:15:05,794 - __main__ - INFO - ======================================================================
+2026-04-21 01:15:05,794 - __main__ - INFO - Starting Full Factor Analysis
+2026-04-21 01:15:05,794 - __main__ - INFO - ======================================================================
+2026-04-21 01:15:05,794 - __main__ - INFO - Loading data from data\processed\factor_data.parquet
+2026-04-21 01:15:05,820 - __main__ - INFO - Loaded 3 rows, 1 unique tickers
+2026-04-21 01:15:05,820 - __main__ - INFO - Aggregating factors by company-quarter
+2026-04-21 01:15:05,837 - __main__ - INFO - Aggregated to 1 company-quarter observations
+2026-04-21 01:15:05,840 - __main__ - INFO - Saved aggregated data to data\analysis\aggregated_factors.parquet
+2026-04-21 01:15:05,840 - __main__ - INFO - Computing factor statistics
+2026-04-21 01:15:05,842 - __main__ - INFO - confidence_score: mean=6.00, std=nan
+2026-04-21 01:15:05,843 - __main__ - INFO - risk_awareness: mean=6.00, std=nan
+2026-04-21 01:15:05,844 - __main__ - INFO - strategic_shift: mean=6.00, std=nan
+2026-04-21 01:15:05,844 - __main__ - INFO - Computing cross-factor correlation
+2026-04-21 01:15:05,848 - __main__ - INFO - 
+Correlation Matrix:
+                  confidence_score  risk_awareness  strategic_shift
+confidence_score               NaN             NaN              NaN
+risk_awareness                 NaN             NaN              NaN
+strategic_shift                NaN             NaN              NaN
+2026-04-21 01:15:05,848 - __main__ - INFO - Performing quantile analysis for confidence_score (n=3)
+2026-04-21 01:16:20,214 - __main__ - INFO - Initialized FactorAnalyzer: input=data/processed/factor_data.parquet, output=data/analysis
+2026-04-21 01:16:20,215 - __main__ - INFO - ======================================================================
+2026-04-21 01:16:20,215 - __main__ - INFO - Starting Full Factor Analysis
+2026-04-21 01:16:20,215 - __main__ - INFO - ======================================================================
+2026-04-21 01:16:20,215 - __main__ - INFO - Loading data from data\processed\factor_data.parquet
+2026-04-21 01:16:20,241 - __main__ - INFO - Loaded 6 rows, 1 unique tickers
+2026-04-21 01:16:20,241 - __main__ - INFO - Aggregating factors by company-quarter
+2026-04-21 01:16:20,247 - __main__ - INFO - Aggregated to 1 company-quarter observations
+2026-04-21 01:16:20,249 - __main__ - INFO - Saved aggregated data to data\analysis\aggregated_factors.parquet
+2026-04-21 01:16:20,249 - __main__ - INFO - Computing factor statistics
+2026-04-21 01:16:20,250 - __main__ - INFO - confidence_score: mean=5.99, std=nan
+2026-04-21 01:16:20,251 - __main__ - INFO - risk_awareness: mean=5.99, std=nan
+2026-04-21 01:16:20,252 - __main__ - INFO - strategic_shift: mean=5.99, std=nan
+2026-04-21 01:16:20,252 - __main__ - INFO - Computing cross-factor correlation
+2026-04-21 01:16:20,255 - __main__ - INFO - 
+Correlation Matrix:
+                  confidence_score  risk_awareness  strategic_shift
+confidence_score               NaN             NaN              NaN
+risk_awareness                 NaN             NaN              NaN
+strategic_shift                NaN             NaN              NaN
+2026-04-21 01:16:20,255 - __main__ - INFO - Performing quantile analysis for confidence_score (n=3)
+2026-04-21 01:16:20,255 - __main__ - WARNING - Insufficient data (1 rows) for 3 quantiles, skipping
+2026-04-21 01:16:20,255 - __main__ - INFO - Performing quantile analysis for risk_awareness (n=3)
+2026-04-21 01:16:20,255 - __main__ - WARNING - Insufficient data (1 rows) for 3 quantiles, skipping
+2026-04-21 01:16:20,255 - __main__ - INFO - Performing quantile analysis for strategic_shift (n=3)
+2026-04-21 01:16:20,255 - __main__ - WARNING - Insufficient data (1 rows) for 3 quantiles, skipping
+2026-04-21 01:16:20,255 - __main__ - INFO - Simulating forward returns for confidence_score
+2026-04-21 01:16:20,255 - __main__ - WARNING - Using SIMULATED returns - replace with real market data in production
+2026-04-21 01:16:20,258 - __main__ - INFO - Simulating forward returns for risk_awareness
+2026-04-21 01:16:20,258 - __main__ - WARNING - Using SIMULATED returns - replace with real market data in production
+2026-04-21 01:16:20,258 - __main__ - INFO - Simulating forward returns for strategic_shift
+2026-04-21 01:16:20,258 - __main__ - WARNING - Using SIMULATED returns - replace with real market data in production
+2026-04-21 01:16:20,258 - __main__ - INFO - Generating visualizations...
+2026-04-21 01:16:20,259 - __main__ - INFO - Plotting factor distributions
+2026-04-21 01:17:42,245 - factor_analysis - INFO - Initialized FactorAnalyzer: input=data/processed/factor_data.parquet, output=data/analysis
+2026-04-21 01:17:42,246 - factor_analysis - INFO - Loading data from data\processed\factor_data.parquet
+2026-04-21 01:17:42,272 - factor_analysis - INFO - Loaded 6 rows, 1 unique tickers
+2026-04-21 01:17:42,272 - factor_analysis - INFO - Computing factor statistics
+2026-04-21 01:17:42,274 - factor_analysis - INFO - confidence_score: mean=5.17, std=0.41
+2026-04-21 01:17:42,275 - factor_analysis - INFO - risk_awareness: mean=5.17, std=0.41
+2026-04-21 01:17:42,276 - factor_analysis - INFO - strategic_shift: mean=5.17, std=0.41
+2026-04-21 01:17:42,276 - factor_analysis - INFO - Computing cross-factor correlation
+2026-04-21 01:17:42,281 - factor_analysis - INFO - 
+Correlation Matrix:
+                  confidence_score  risk_awareness  strategic_shift
+confidence_score               1.0             1.0              1.0
+risk_awareness                 1.0             1.0              1.0
+strategic_shift                1.0             1.0              1.0
+2026-04-21 01:17:42,281 - factor_analysis - INFO - Performing quantile analysis for confidence_score (n=2)
+2026-04-21 01:17:42,282 - factor_analysis - WARNING - Could not create quantiles for confidence_score: Bin labels must be one fewer than the number of bin edges
+2026-04-21 01:17:42,282 - factor_analysis - INFO - Performing quantile analysis for risk_awareness (n=2)
+2026-04-21 01:17:42,283 - factor_analysis - WARNING - Could not create quantiles for risk_awareness: Bin labels must be one fewer than the number of bin edges
+2026-04-21 01:17:42,283 - factor_analysis - INFO - Performing quantile analysis for strategic_shift (n=2)
+2026-04-21 01:17:42,284 - factor_analysis - WARNING - Could not create quantiles for strategic_shift: Bin labels must be one fewer than the number of bin edges
+2026-04-21 01:17:42,284 - factor_analysis - INFO - Simulating forward returns for confidence_score
+2026-04-21 01:17:42,284 - factor_analysis - WARNING - Using SIMULATED returns - replace with real market data in production
+2026-04-21 01:17:42,289 - factor_analysis - INFO - 
+Simulated Returns by confidence_score Quantile:
+                             mean     std  count
+confidence_score_quantile                       
+Q1                         0.0543  0.0785      6
+2026-04-21 01:17:42,290 - factor_analysis - INFO - Simulating forward returns for risk_awareness
+2026-04-21 01:17:42,290 - factor_analysis - WARNING - Using SIMULATED returns - replace with real market data in production
+2026-04-21 01:17:42,292 - factor_analysis - INFO - 
+Simulated Returns by risk_awareness Quantile:
+                           mean     std  count
+risk_awareness_quantile                       
+Q1                       0.0543  0.0785      6
+2026-04-21 01:17:42,293 - factor_analysis - INFO - Simulating forward returns for strategic_shift
+2026-04-21 01:17:42,293 - factor_analysis - WARNING - Using SIMULATED returns - replace with real market data in production
+2026-04-21 01:17:42,296 - factor_analysis - INFO - 
+Simulated Returns by strategic_shift Quantile:
+                            mean     std  count
+strategic_shift_quantile                       
+Q1                        0.0543  0.0785      6
+2026-04-21 01:17:42,296 - factor_analysis - INFO - Plotting factor distributions
+2026-04-21 01:17:42,987 - factor_analysis - INFO - Saved plot to data\analysis\factor_distributions.png
+2026-04-21 01:17:43,012 - factor_analysis - INFO - Plotting correlation heatmap
+2026-04-21 01:17:43,281 - factor_analysis - INFO - Saved plot to data\analysis\factor_correlation.png
+2026-04-21 01:17:43,301 - factor_analysis - INFO - Plotting quantile comparison for confidence_score
+2026-04-21 01:17:43,556 - factor_analysis - INFO - Saved plot to data\analysis\confidence_score_quantile_comparison.png
+2026-04-21 01:17:43,570 - factor_analysis - INFO - Plotting factor-return relationship for confidence_score
+2026-04-21 01:17:43,876 - factor_analysis - INFO - Saved plot to data\analysis\confidence_score_return_relationship.png
+2026-04-21 01:17:43,891 - factor_analysis - INFO - Plotting quantile comparison for risk_awareness
+2026-04-21 01:17:44,152 - factor_analysis - INFO - Saved plot to data\analysis\risk_awareness_quantile_comparison.png
+2026-04-21 01:17:44,166 - factor_analysis - INFO - Plotting factor-return relationship for risk_awareness
+2026-04-21 01:17:44,466 - factor_analysis - INFO - Saved plot to data\analysis\risk_awareness_return_relationship.png
+2026-04-21 01:17:44,482 - factor_analysis - INFO - Plotting quantile comparison for strategic_shift
+2026-04-21 01:17:44,737 - factor_analysis - INFO - Saved plot to data\analysis\strategic_shift_quantile_comparison.png
+2026-04-21 01:17:44,768 - factor_analysis - INFO - Plotting factor-return relationship for strategic_shift
+2026-04-21 01:17:45,069 - factor_analysis - INFO - Saved plot to data\analysis\strategic_shift_return_relationship.png
+2026-04-21 01:17:45,086 - factor_analysis - INFO - Aggregating factors by company-quarter
+2026-04-21 01:17:45,091 - factor_analysis - INFO - Aggregated to 1 company-quarter observations

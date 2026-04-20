@@ -1,0 +1,38 @@
+2026-04-21 00:52:14,111 - __main__ - INFO - Pipeline initialized: paragraph chunker, input=data/raw_transcripts, output=data/processed/processed_data.parquet
+2026-04-21 00:52:14,111 - __main__ - INFO - ============================================================
+2026-04-21 00:52:14,111 - __main__ - INFO - Starting Pipeline Execution
+2026-04-21 00:52:14,111 - __main__ - INFO - ============================================================
+2026-04-21 00:52:14,111 - __main__ - INFO - Found 1 transcript files
+2026-04-21 00:52:14,112 - __main__ - INFO - Processing CLF_2026Q1.txt (44252 chars)
+2026-04-21 00:52:14,115 - __main__ - INFO - Split CLF_2026Q1 into 6 paragraph chunks
+2026-04-21 00:52:14,115 - __main__ - INFO - Total chunks generated: 6
+2026-04-21 00:52:16,654 - __main__ - INFO - Saved 6 rows to data\processed\processed_data.parquet
+2026-04-21 00:52:16,654 - __main__ - INFO - ============================================================
+2026-04-21 00:52:16,654 - __main__ - INFO - Pipeline Statistics
+2026-04-21 00:52:16,654 - __main__ - INFO - ============================================================
+2026-04-21 00:52:16,654 - __main__ - INFO - Total rows: 6
+2026-04-21 00:52:16,654 - __main__ - INFO - Unique tickers: 1
+2026-04-21 00:52:16,655 - __main__ - INFO - Date range: 2026-2026
+2026-04-21 00:52:16,655 - __main__ - INFO - Quarters: ['Q1']
+2026-04-21 00:52:16,655 - __main__ - INFO - Avg chunk length: 7372 chars
+2026-04-21 00:52:16,657 - __main__ - INFO - Chunks per transcript: 6.0
+2026-04-21 00:52:16,657 - __main__ - INFO - Pipeline completed successfully!
+2026-04-21 00:52:40,573 - __main__ - INFO - Pipeline initialized: token chunker, input=data/raw_transcripts, output=data/processed/processed_data_token.parquet
+2026-04-21 00:52:40,573 - __main__ - INFO - ============================================================
+2026-04-21 00:52:40,573 - __main__ - INFO - Starting Pipeline Execution
+2026-04-21 00:52:40,573 - __main__ - INFO - ============================================================
+2026-04-21 00:52:40,574 - __main__ - INFO - Found 1 transcript files
+2026-04-21 00:52:40,574 - __main__ - INFO - Processing CLF_2026Q1.txt (44252 chars)
+2026-04-21 00:52:40,581 - __main__ - INFO - Split CLF_2026Q1 into 34 token chunks (size=256, overlap=30)
+2026-04-21 00:52:40,581 - __main__ - INFO - Total chunks generated: 34
+2026-04-21 00:52:40,596 - __main__ - INFO - Saved 34 rows to data\processed\processed_data_token.parquet
+2026-04-21 00:52:40,596 - __main__ - INFO - ============================================================
+2026-04-21 00:52:40,596 - __main__ - INFO - Pipeline Statistics
+2026-04-21 00:52:40,596 - __main__ - INFO - ============================================================
+2026-04-21 00:52:40,596 - __main__ - INFO - Total rows: 34
+2026-04-21 00:52:40,596 - __main__ - INFO - Unique tickers: 1
+2026-04-21 00:52:40,597 - __main__ - INFO - Date range: 2026-2026
+2026-04-21 00:52:40,597 - __main__ - INFO - Quarters: ['Q1']
+2026-04-21 00:52:40,597 - __main__ - INFO - Avg chunk length: 1473 chars
+2026-04-21 00:52:40,598 - __main__ - INFO - Chunks per transcript: 34.0
+2026-04-21 00:52:40,598 - __main__ - INFO - Pipeline completed successfully!

@@ -1,0 +1,96 @@
+2026-04-21 01:09:09,016 - __main__ - INFO - Using ANTHROPIC_AUTH_TOKEN for authentication
+2026-04-21 01:09:10,919 - __main__ - INFO - Using custom OpenAI endpoint: https://xuedingtoken.com
+2026-04-21 01:09:10,919 - __main__ - INFO - Using OpenClaw with base_url: https://xuedingtoken.com
+2026-04-21 01:09:10,919 - __main__ - INFO - Initialized openclaw client with model anthropic/claude-sonnet-4-6
+2026-04-21 01:09:10,919 - __main__ - INFO - ============================================================
+2026-04-21 01:09:10,919 - __main__ - INFO - Starting Sentiment Extraction Pipeline
+2026-04-21 01:09:10,921 - __main__ - INFO - ============================================================
+2026-04-21 01:09:10,972 - __main__ - INFO - Loaded 6 chunks from data\processed\processed_data.parquet
+2026-04-21 01:09:10,974 - __main__ - INFO - Limited to first 3 chunks for testing
+2026-04-21 01:09:10,976 - __main__ - INFO - Processing batch 1/1 (3 chunks)
+2026-04-21 01:09:13,356 - httpx - INFO - HTTP Request: POST https://xuedingtoken.com/chat/completions "HTTP/1.1 200 OK"
+2026-04-21 01:09:13,802 - __main__ - WARNING - Retry attempt 1 after error: 'str' object has no attribute 'choices'
+2026-04-21 01:09:16,366 - httpx - INFO - HTTP Request: POST https://xuedingtoken.com/chat/completions "HTTP/1.1 200 OK"
+2026-04-21 01:09:16,588 - __main__ - WARNING - Retry attempt 2 after error: 'str' object has no attribute 'choices'
+2026-04-21 01:09:19,144 - httpx - INFO - HTTP Request: POST https://xuedingtoken.com/chat/completions "HTTP/1.1 200 OK"
+2026-04-21 01:09:19,276 - __main__ - ERROR - Failed to process chunk: RetryError[<Future at 0x1046d8f7260 state=finished raised AttributeError>]
+2026-04-21 01:09:19,276 - __main__ - WARNING - Skipping chunk 0 due to extraction failure
+2026-04-21 01:09:21,657 - httpx - INFO - HTTP Request: POST https://xuedingtoken.com/chat/completions "HTTP/1.1 200 OK"
+2026-04-21 01:09:21,764 - __main__ - WARNING - Retry attempt 1 after error: 'str' object has no attribute 'choices'
+2026-04-21 01:09:24,165 - httpx - INFO - HTTP Request: POST https://xuedingtoken.com/chat/completions "HTTP/1.1 200 OK"
+2026-04-21 01:09:24,255 - __main__ - WARNING - Retry attempt 2 after error: 'str' object has no attribute 'choices'
+2026-04-21 01:09:26,671 - httpx - INFO - HTTP Request: POST https://xuedingtoken.com/chat/completions "HTTP/1.1 200 OK"
+2026-04-21 01:09:26,864 - __main__ - ERROR - Failed to process chunk: RetryError[<Future at 0x1046a63a2d0 state=finished raised AttributeError>]
+2026-04-21 01:09:26,864 - __main__ - WARNING - Skipping chunk 1 due to extraction failure
+2026-04-21 01:09:29,246 - httpx - INFO - HTTP Request: POST https://xuedingtoken.com/chat/completions "HTTP/1.1 200 OK"
+2026-04-21 01:09:29,335 - __main__ - WARNING - Retry attempt 1 after error: 'str' object has no attribute 'choices'
+2026-04-21 01:09:31,732 - httpx - INFO - HTTP Request: POST https://xuedingtoken.com/chat/completions "HTTP/1.1 200 OK"
+2026-04-21 01:09:31,847 - __main__ - WARNING - Retry attempt 2 after error: 'str' object has no attribute 'choices'
+2026-04-21 01:09:34,231 - httpx - INFO - HTTP Request: POST https://xuedingtoken.com/chat/completions "HTTP/1.1 200 OK"
+2026-04-21 01:09:34,329 - __main__ - ERROR - Failed to process chunk: RetryError[<Future at 0x104aeea3170 state=finished raised AttributeError>]
+2026-04-21 01:09:34,329 - __main__ - WARNING - Skipping chunk 2 due to extraction failure
+2026-04-21 01:09:36,330 - __main__ - INFO - Batch 1 completed. Total tokens: 0
+2026-04-21 01:09:36,330 - __main__ - ERROR - No results generated
+2026-04-21 01:09:36,330 - __main__ - ERROR - Pipeline failed to generate results
+2026-04-21 01:11:05,007 - __main__ - INFO - Using ANTHROPIC_AUTH_TOKEN for authentication
+2026-04-21 01:11:06,027 - __main__ - INFO - Using custom OpenAI endpoint: https://xuedingtoken.com/v1
+2026-04-21 01:11:06,027 - __main__ - INFO - Using OpenClaw with base_url: https://xuedingtoken.com/v1
+2026-04-21 01:11:06,027 - __main__ - INFO - Initialized openclaw client with model claude-sonnet-4-6
+2026-04-21 01:11:06,027 - __main__ - INFO - ============================================================
+2026-04-21 01:11:06,028 - __main__ - INFO - Starting Sentiment Extraction Pipeline
+2026-04-21 01:11:06,028 - __main__ - INFO - ============================================================
+2026-04-21 01:11:06,083 - __main__ - INFO - Loaded 6 chunks from data\processed\processed_data.parquet
+2026-04-21 01:11:06,083 - __main__ - INFO - Limited to first 3 chunks for testing
+2026-04-21 01:11:06,083 - __main__ - INFO - Processing batch 1/1 (3 chunks)
+2026-04-21 01:11:12,285 - httpx - INFO - HTTP Request: POST https://xuedingtoken.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-21 01:11:17,983 - httpx - INFO - HTTP Request: POST https://xuedingtoken.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-21 01:11:22,957 - httpx - INFO - HTTP Request: POST https://xuedingtoken.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-21 01:11:24,958 - __main__ - INFO - Batch 1 completed. Total tokens: 18028
+2026-04-21 01:11:24,976 - __main__ - INFO - Saved 3 rows to data\processed\factor_data.parquet
+2026-04-21 01:11:24,985 - __main__ - INFO - Saved cache with 3 entries
+2026-04-21 01:11:24,985 - __main__ - INFO - ============================================================
+2026-04-21 01:11:24,985 - __main__ - INFO - Extraction Statistics
+2026-04-21 01:11:24,985 - __main__ - INFO - ============================================================
+2026-04-21 01:11:24,985 - __main__ - INFO - Total chunks processed: 3
+2026-04-21 01:11:24,985 - __main__ - INFO - Model: claude-sonnet-4-6
+2026-04-21 01:11:24,985 - __main__ - INFO - Prompt version: v1.0
+2026-04-21 01:11:24,985 - __main__ - INFO - Total tokens used: 18028
+2026-04-21 01:11:24,985 - __main__ - INFO - Total API requests: 3
+2026-04-21 01:11:24,987 - __main__ - INFO - Avg API latency: 4289ms
+2026-04-21 01:11:24,987 - __main__ - INFO - 
+Factor Statistics:
+2026-04-21 01:11:24,987 - __main__ - INFO -   confidence_score: mean=5.33, std=0.58
+2026-04-21 01:11:24,987 - __main__ - INFO -   risk_awareness: mean=5.33, std=0.58
+2026-04-21 01:11:24,987 - __main__ - INFO -   strategic_shift: mean=5.33, std=0.58
+2026-04-21 01:11:24,987 - __main__ - INFO - Pipeline completed successfully!
+2026-04-21 01:15:34,744 - __main__ - INFO - Using ANTHROPIC_AUTH_TOKEN for authentication
+2026-04-21 01:15:35,784 - __main__ - INFO - Using custom OpenAI endpoint: https://xuedingtoken.com/v1
+2026-04-21 01:15:35,785 - __main__ - INFO - Using OpenClaw with base_url: https://xuedingtoken.com/v1
+2026-04-21 01:15:35,785 - __main__ - INFO - Initialized openclaw client with model claude-sonnet-4-6
+2026-04-21 01:15:35,847 - __main__ - INFO - Loaded 3 cached results
+2026-04-21 01:15:35,847 - __main__ - INFO - ============================================================
+2026-04-21 01:15:35,847 - __main__ - INFO - Starting Sentiment Extraction Pipeline
+2026-04-21 01:15:35,847 - __main__ - INFO - ============================================================
+2026-04-21 01:15:35,850 - __main__ - INFO - Loaded 6 chunks from data\processed\processed_data.parquet
+2026-04-21 01:15:35,850 - __main__ - INFO - Processing batch 1/1 (6 chunks)
+2026-04-21 01:15:45,711 - httpx - INFO - HTTP Request: POST https://xuedingtoken.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-21 01:15:50,398 - httpx - INFO - HTTP Request: POST https://xuedingtoken.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-21 01:15:56,013 - httpx - INFO - HTTP Request: POST https://xuedingtoken.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-04-21 01:15:58,015 - __main__ - INFO - Batch 1 completed. Total tokens: 8108
+2026-04-21 01:15:58,020 - __main__ - INFO - Saved 6 rows to data\processed\factor_data.parquet
+2026-04-21 01:15:58,022 - __main__ - INFO - Saved cache with 6 entries
+2026-04-21 01:15:58,022 - __main__ - INFO - ============================================================
+2026-04-21 01:15:58,022 - __main__ - INFO - Extraction Statistics
+2026-04-21 01:15:58,022 - __main__ - INFO - ============================================================
+2026-04-21 01:15:58,022 - __main__ - INFO - Total chunks processed: 6
+2026-04-21 01:15:58,022 - __main__ - INFO - Model: claude-sonnet-4-6
+2026-04-21 01:15:58,022 - __main__ - INFO - Prompt version: v1.0
+2026-04-21 01:15:58,022 - __main__ - INFO - Total tokens used: 8108
+2026-04-21 01:15:58,022 - __main__ - INFO - Total API requests: 3
+2026-04-21 01:15:58,023 - __main__ - INFO - Avg API latency: 3838ms
+2026-04-21 01:15:58,023 - __main__ - INFO - 
+Factor Statistics:
+2026-04-21 01:15:58,023 - __main__ - INFO -   confidence_score: mean=5.17, std=0.41
+2026-04-21 01:15:58,023 - __main__ - INFO -   risk_awareness: mean=5.17, std=0.41
+2026-04-21 01:15:58,023 - __main__ - INFO -   strategic_shift: mean=5.17, std=0.41
+2026-04-21 01:15:58,023 - __main__ - INFO - Pipeline completed successfully!
