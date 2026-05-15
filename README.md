@@ -499,23 +499,6 @@ If you use this project in your research, please cite:
 }
 ```
 
----
-
-## 📞 Contact & Support
-
-- **Issues**: [GitHub Issues](https://github.com/yourusername/quant-NPL/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/yourusername/quant-NPL/discussions)
-- **Email**: your.email@example.com
-
----
-
-## ⭐ Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=yourusername/quant-NPL&type=Date)](https://star-history.com/#yourusername/quant-NPL&Date)
-
----
-
-<div align="center">
 
 **Built with ❤️ for the quant community**
 
